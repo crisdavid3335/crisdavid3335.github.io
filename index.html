@@ -3,108 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Altamirano - CV Web</title>
+    <title>Christian Altamirano | Data & AI Specialist</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Iconos de FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Panel Lateral (Izquierdo) -->
-        <aside class="sidebar">
-            <div class="profile-info">
-                <h1>Christian Altamirano</h1>
-                <h2>Profesor, Programador, Comediante</h2>
-                <p class="location"><i class="fas fa-map-marker-alt"></i> Montevideo, Uruguay</p>
+
+    <!-- Navegación -->
+    <nav>
+        <div class="logo">&lt;CA /&gt;</div>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#skills">Stack Teconológico</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#contacto" class="btn-nav">Hablemos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Hero (La primera impresión) -->
+    <header id="hero">
+        <div class="hero-content">
+            <p class="greeting">Hola, soy</p>
+            <h1>Christian Altamirano</h1>
+            <h2 class="typewriter">Economista. Especialista en IA. Profesor. <span class="highlight">Comediante.</span></h2>
+            <p class="hero-desc">
+                Transformo datos complejos en decisiones estratégicas de negocio.<br>
+                Construyo modelos predictivos en Python por la mañana, formo a la próxima generación en la Universidad ORT por la tarde... y a veces, cuento chistes.
+            </p>
+            <div class="cta-buttons">
+                <a href="#experiencia" class="btn btn-primary">Ver mi trayectoria <i class="fas fa-arrow-right"></i></a>
+                <a href="https://www.linkedin.com/in/crisdavid3335" target="_blank" class="btn btn-secondary"><i class="fab fa-linkedin-in"></i> Conectar</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="reveal">
+        <div class="section-title">
+            <h2>01. Mi ADN Profesional</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Mi carrera no es convencional, y esa es mi mayor ventaja. Soy <strong>economista de formación</strong> con una especialización avanzada en <strong>Inteligencia Artificial</strong>.</p>
+                <p>Actúo como el puente perfecto entre el análisis cuantitativo puro y la aplicación de tecnologías de vanguardia (Deep Learning, Machine Learning) para resolver problemas reales de negocio.</p>
+                <p>Actualmente optimizo procesos como <em>Data Processing Analyst</em> en Equifax, y mi pasión por la comunicación me llevó a ser <em>Profesor Adjunto</em> en la Universidad ORT, donde traduzco lo complejo a lo simple.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-box">
+                    <i class="fas fa-brain"></i>
+                    <h3>Estratega</h3>
+                    <p>Visión de negocio aplicada a datos.</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-code"></i>
+                    <h3>Desarrollador</h3>
+                    <p>Automatización y modelos en Python.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Skills -->
+    <section id="skills" class="reveal">
+        <div class="section-title">
+            <h2>02. Mi Stack Tecnológico</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill-card"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-card"><i class="fas fa-network-wired"></i> Machine Learning</div>
+            <div class="skill-card"><i class="fas fa-layer-group"></i> Deep Learning</div>
+            <div class="skill-card"><i class="fas fa-chart-pie"></i> Power BI</div>
+            <div class="skill-card"><i class="fas fa-robot"></i> RPA (Automatización)</div>
+            <div class="skill-card"><i class="fas fa-table"></i> Excel Avanzado</div>
+            <div class="skill-card"><i class="fas fa-book"></i> Jupyter / Anaconda</div>
+            <div class="skill-card"><i class="fas fa-database"></i> Gestión de Bases de Datos</div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia y Educación -->
+    <section id="experiencia" class="reveal">
+        <div class="section-title">
+            <h2>03. Dónde he dejado huella</h2>
+        </div>
+        
+        <div class="timeline">
+            <!-- Equifax -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Diciembre 2022 - Presente</span>
+                    <h3>Data Processing Analyst</h3>
+                    <h4>Equifax</h4>
+                    <p>Traducción de complejos desafíos de negocio en estrategias impulsadas por datos. Desarrollo de modelos predictivos y automatización de análisis con Python para optimizar el rendimiento empresarial.</p>
+                </div>
             </div>
 
-            <div class="contact-info">
-                <h3>Contacto</h3>
-                <ul>
-                    <li><a href="mailto:crisdavid3335@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
-                    <li><a href="tel:+59893852123"><i class="fas fa-mobile-alt"></i> +598 93852123</a></li>
-                    <li><a href="https://www.linkedin.com/in/crisdavid3335" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                    <li><a href="https://crisdavid3335.github.io/" target="_blank"><i class="fab fa-github"></i> Web/Portfolio</a></li>
-                </ul>
+            <!-- Universidad ORT -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Agosto 2023 - Presente</span>
+                    <h3>Profesor Universitario</h3>
+                    <h4>Universidad ORT Uruguay</h4>
+                    <p>A cargo de asignaturas de Planillas Electrónicas y Bases de Datos. Dotando a los estudiantes de bases sólidas, conectando la teoría académica con la realidad del mundo empresarial.</p>
+                </div>
             </div>
 
-            <div class="skills">
-                <h3>Aptitudes Principales</h3>
-                <ul>
-                    <li>Inteligencia de datos</li>
-                    <li>Inteligencia empresarial</li>
-                    <li>Automatización robótica de procesos</li>
-                    <li>Python & Machine Learning</li>
-                    <li>Power BI & Excel Avanzado</li>
-                </ul>
+            <!-- Educación IA -->
+            <div class="timeline-item">
+                <div class="timeline-dot edu-dot"></div>
+                <div class="timeline-content edu-content">
+                    <span class="date">Febrero 2023 - Julio 2024</span>
+                    <h3>Diplomatura en Artificial Intelligence</h3>
+                    <h4>Universidad ORT Uruguay</h4>
+                </div>
             </div>
 
-            <div class="certifications">
-                <h3>Certificaciones</h3>
-                <ul>
-                    <li>Entorno de Trabajo para Ciencia de Datos con Jupyter Notebooks y Anaconda</li>
-                    <li>Introduction to Python</li>
-                    <li>Curso Básico de Python</li>
-                    <li>Data Analysis with Python</li>
-                    <li>Analítica predictiva y modelos de regresión en Python</li>
-                </ul>
+            <!-- Educación Economía -->
+            <div class="timeline-item">
+                <div class="timeline-dot edu-dot"></div>
+                <div class="timeline-content edu-content">
+                    <span class="date">Febrero 2017 - Julio 2021</span>
+                    <h3>Bachelor's degree, Economics</h3>
+                    <h4>Universidad Central del Ecuador</h4>
+                </div>
             </div>
-        </aside>
+        </div>
+    </section>
 
-        <!-- Contenido Principal (Derecho) -->
-        <main class="main-content">
-            <section class="summary">
-                <h3><i class="fas fa-user"></i> Extracto</h3>
-                <p>Economista de formación con una especialización avanzada en Inteligencia Artificial por la Universidad ORT Uruguay. Mi carrera es un puente entre el análisis cuantitativo y la aplicación de tecnologías de vanguardia para resolver problemas de negocio. Como Data Processing Analyst en Equifax, optimizo y automatizo procesos de datos, mientras que en mi rol como Profesor Adjunto en la Universidad ORT, formo a la nueva generación de profesionales en el dominio de herramientas de análisis y gestión de datos. Mi pasión es transformar datos complejos en insights accionables, utilizando modelos predictivos, machine learning y herramientas de visualización como Power BI. Busco constantemente aplicar mis conocimientos en Deep Learning, Python y análisis de negocios para generar un impacto medible y estratégico.</p>
-            </section>
+    <!-- Footer / Contacto -->
+    <footer id="contacto">
+        <h2>¿Listo para optimizar tus datos?</h2>
+        <p>Siempre estoy abierto a discutir nuevos proyectos, ideas de inteligencia artificial o simplemente compartir un buen chiste.</p>
+        <a href="mailto:crisdavid3335@gmail.com" class="btn btn-primary big-btn"><i class="fas fa-envelope"></i> Escríbeme un correo</a>
+        
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/crisdavid3335" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://crisdavid3335.github.io/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="tel:+59893852123"><i class="fas fa-phone"></i></a>
+        </div>
+        <p class="copyright">Diseñado y construido por Christian Altamirano © 2024</p>
+    </footer>
 
-            <section class="experience">
-                <h3><i class="fas fa-briefcase"></i> Experiencia</h3>
-                
-                <div class="job">
-                    <h4>Data Processing Analyst</h4>
-                    <h5>Equifax <span>| Diciembre 2022 - Presente</span></h5>
-                    <p>Traduzco complejos desafíos de negocio en estrategias impulsadas por datos. Utilizo Python para desarrollar modelos predictivos y automatizar análisis, convirtiendo insights en decisiones estratégicas que optimizan el rendimiento empresarial.</p>
-                </div>
-
-                <div class="job">
-                    <h4>Profesor Universitario</h4>
-                    <h5>Universidad ORT Uruguay <span>| Agosto 2023 - Presente</span></h5>
-                    <p>A cargo de las asignaturas de Planillas Electrónicas y Bases de Datos, Excel básico y avanzado. Mi objetivo es dotar a los estudiantes de una base sólida en herramientas de gestión de datos, conectando la teoría académica con las aplicaciones prácticas del mundo empresarial.</p>
-                </div>
-
-                <div class="job">
-                    <h4>Asistente de Control</h4>
-                    <h5>ASEO Higiene Profesional Empresarial <span>| Junio 2022 - Noviembre 2022</span></h5>
-                </div>
-
-                <div class="job">
-                    <h4>Pasante Calidad de procesos y proyectos</h4>
-                    <h5>Metropolitan Touring Agencia de Viajes <span>| Diciembre 2021 - Marzo 2022</span></h5>
-                    <p>Manejo y actualización de bases de datos, manejo de información en Excel y realización de presentaciones y dashboards con Power Bi.</p>
-                </div>
-
-                <div class="job">
-                    <h4>Practicante Universitario</h4>
-                    <h5>Senescyt <span>| Febrero 2021 - Abril 2021</span></h5>
-                    <p>Elaboración de informes en Excel, seguimiento de casos de becarios, cálculos financieros.</p>
-                </div>
-            </section>
-
-            <section class="education">
-                <h3><i class="fas fa-graduation-cap"></i> Educación</h3>
-                
-                <div class="edu-item">
-                    <h4>Diplomatura, Artificial Intelligence</h4>
-                    <h5>Universidad ORT Uruguay <span>| Feb 2023 - Jul 2024</span></h5>
-                </div>
-
-                <div class="edu-item">
-                    <h4>Bachelor's degree, Economics</h4>
-                    <h5>Universidad Central del Ecuador <span>| Feb 2017 - Jul 2021</span></h5>
-                </div>
-            </section>
-        </main>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
